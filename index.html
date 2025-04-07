@@ -217,7 +217,7 @@
                             view.innerHTML = html;
                             // Update URL without refreshing the page
                             if (history.pushState) {
-                                history.pushState({productId: productId}, data.name, '?product=' + productId);
+                                history.pushState({productId: productId}, data.name, '?product_id=' + productId);
                             }
                         });
                         $('#product-list').hide();
